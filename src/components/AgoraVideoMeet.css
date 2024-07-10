@@ -1,0 +1,49 @@
+.custom-agora-container .agora_video_player {
+  object-fit: cover !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 15px !important;
+  border-width: 20px !important;
+}
+
+@media screen and (max-width: 720px) {
+  .custom-agora-container .agora_video_player {
+    object-fit: contain !important;
+    width: 100% !important;
+  }
+  #maxvideoview :first-child :only-child{
+    object-fit: contain !important;
+  }
+
+  #maxviewcontainer{
+    padding:20 !important;
+  }
+}
+
+._3Sxu7 {
+  gap: 30px;
+  overflow: hidden !important;
+}
+
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: red;
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+}
+
+#wrapper {
+  display: flex !important;
+  gap: 10px !important;
+  justify-content: center !important;
+}
+
+#wrapper :nth-child(3){
+  display: none !important;
+}
